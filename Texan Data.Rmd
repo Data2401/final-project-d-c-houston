@@ -47,9 +47,38 @@ According to XXXXX, there are three major components to look out for when planni
 
 
 Firstly let us consider what you need to survive: Money!
-```{r}
-## Display Industries
 
+```{r, include=FALSE}
+# Display Industries
+## Overall Industry comparison
+H <- HTX_Work %>% 
+  group_by(Year) %>% 
+  slice_max( order_by = Workforce.by.Industry.and.Gender, n = 5) %>% 
+  summarise(Industry_Population = mean(Workforce.by.Industry.and.Gender)) %>% 
+  mutate(City = "Houston")
+D <- DTX_Work %>% 
+  group_by(Year) %>% 
+  slice_max( order_by = Workforce.by.Industry.and.Gender, n = 5) %>% 
+  summarise(Industry_Population = mean(Workforce.by.Industry.and.Gender)) %>% 
+  mutate(City = "Dallas")
+SA <- SATX_Work %>% 
+  group_by(Year) %>% 
+  slice_max( order_by = Workforce.by.Industry.and.Gender, n = 5) %>% 
+  summarise(Industry_Population = mean(Workforce.by.Industry.and.Gender)) %>% 
+  mutate(City = "San Antonio")
+```
+
+```{r}
+g <- rbind(H, D, SA)
+options(scipen = 999)
+ggplot(g) + 
+  geom_line(aes( x = Year, y = Industry_Population, color = City), size = 1.5) +  
+  labs( title = "Industry Growth in Houston, Dallas, and San Antonio", subtitle = "Within Top 5 Industries", x = "Year", y = "Workforce Number", color = "City") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text()) +
+  scale_x_continuous(breaks = 2013:2019) 
+
+## Individual Cities
 HTX_Work %>% 
   group_by(Year) %>% 
   select(Industry, Workforce.by.Industry.and.Gender, Year, Geography) %>% 
@@ -71,7 +100,8 @@ DTX_Work %>%
   labs( title = "Industry Growth in Dallas", subtitle = "Top 5 Largest Industries", x = "Year", y = "Workforce Number") +
   theme_fivethirtyeight() +
   theme(axis.title = element_text()) +
-  guides(color = guide_legend(nrow = 3))
+  scale_x_continuous(breaks = 2013:2019) +
+  guides(color = guide_legend(nrow = 4))
 
 options(scipen = 999)
 SATX_Work %>% 
@@ -82,8 +112,9 @@ SATX_Work %>%
   geom_line( size= 1.5 , alpha = .8) +
   labs( title = "Industry Growth in San Antonio", subtitle = "Top 5 Largest Industries", x = "Year", y = "Workforce Number") +
   theme_fivethirtyeight() +
-  theme(axis.title = element_text())
-
+  theme(axis.title = element_text()) +
+  scale_x_continuous(breaks = 2013:2019) +
+  guides(color = guide_legend(nrow = 4))
 
 ## Display Income
 ```
