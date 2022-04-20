@@ -1,0 +1,122 @@
+---
+title: "Texan Data"
+author: "Andy Berrios"
+date: '2022-04-26'
+output:   
+  html_document:
+    highlight: pygments
+    theme: readable
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(gganimate)
+library(ggplot2)
+library(ggthemes)
+library(showtext)
+```
+
+
+```{r, include=FALSE}
+# Loading CSV Data Sets
+## Jobs
+HTX_Work <- read.csv("Houston Industries.csv")
+DTX_Work <- read.csv("Dallas Industries.csv")
+SATX_Work <- read.csv("SanAnton Industries.csv")
+HTX_Income <- read.csv("Houston Income.csv")
+DTX_Income <- read.csv("Dallas Income.csv")
+SATX_Income <- read.csv("SanAnton Income.csv")
+
+## Cost of Living
+HTX_House <- read.csv("Houston Property.csv")
+DTX_House <- read.csv("Dallas Property.csv")
+SATX_House <- read.csv("SanAnton Property.csv")
+Commute <- read_csv("Commute.csv")
+
+## Demographics
+HTX_People <- read.csv("Houston Diversity.csv")
+DTX_People <- read.csv("Dallas Diversity.csv")
+SATX_People <- read.csv("SanAnton Diversity.csv")
+```
+
+Where is your future? Where will your next chapter begin?
+
+According to XXXXX, there are three major components to look out for when planning a move; Potential Job Perspectives, Cost of Living, and Demographics.
+
+
+Firstly let us consider what you need to survive: Money!
+```{r}
+## Display Industries
+
+HTX_Work %>% 
+  group_by(Year) %>% 
+  select(Industry, Workforce.by.Industry.and.Gender, Year, Geography) %>% 
+  slice_max( order_by = Workforce.by.Industry.and.Gender, n = 5) %>% 
+  ggplot(aes(x = Year, y = Workforce.by.Industry.and.Gender, color = Industry)) +
+  geom_line( size= 1.5 , alpha = .8) +
+  labs( title = "Industry Growth in Houston", subtitle = "Top 5 Largest Industries", x = "Year", y = "Workforce Number") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text()) +
+  scale_x_continuous(breaks = 2013:2019) +
+  guides(color = guide_legend(nrow = 4))
+
+DTX_Work %>% 
+  group_by(Year) %>% 
+  select(Industry, Workforce.by.Industry.and.Gender, Year, Geography) %>% 
+  slice_max( order_by = Workforce.by.Industry.and.Gender, n = 5) %>% 
+  ggplot(aes(x = Year, y = Workforce.by.Industry.and.Gender, color = Industry)) +
+  geom_line( size= 1.5 , alpha = .8) +
+  labs( title = "Industry Growth in Dallas", subtitle = "Top 5 Largest Industries", x = "Year", y = "Workforce Number") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text()) +
+  guides(color = guide_legend(nrow = 3))
+
+options(scipen = 999)
+SATX_Work %>% 
+  group_by(Year) %>% 
+  select(Industry, Workforce.by.Industry.and.Gender, Year, Geography) %>% 
+  slice_max( order_by = Workforce.by.Industry.and.Gender, n = 5) %>% 
+  ggplot(aes(x = Year, y = Workforce.by.Industry.and.Gender, color = Industry)) +
+  geom_line( size= 1.5 , alpha = .8) +
+  labs( title = "Industry Growth in San Antonio", subtitle = "Top 5 Largest Industries", x = "Year", y = "Workforce Number") +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text())
+
+
+## Display Income
+```
+
+
+
+
+
+
+
+
+
+
+```{r, eval=FALSE}
+# Condensing Data Sets
+Texan_Pop <- Texan_Pop %>% group_by(Year) %>% 
+  select(Birthplace, Total.Population, Year) %>% 
+  slice_max( order_by = Total.Population, n = 15)
+
+Texan_Talk <- Texan_Talk %>% group_by(Year) %>% 
+  select(Language.Spoken.at.Home, Languages.Spoken, Year) %>%
+  slice_max( order_by = Languages.Spoken, n = 15)
+
+
+```
+
+
+
+
+
+
+
+
+
+
+

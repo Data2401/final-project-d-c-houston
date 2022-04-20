@@ -1,0 +1,99 @@
+ID Race,Race,ID Ethnicity,Ethnicity,ID Year,Year,Hispanic Population Moe,Geography,ID Geography,Slug Geography,Population,share
+0,"White Alone",0,"Not Hispanic or Latino",2019,"2019",8939,"San Antonio, TX","16000US4865000","san-antonio-tx",369315,0.238691226369365
+0,"White Alone",1,"Hispanic or Latino",2019,"2019",15154,"San Antonio, TX","16000US4865000","san-antonio-tx",842490,0.5445079980610761
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2019,"2019",5895,"San Antonio, TX","16000US4865000","san-antonio-tx",101980,0.06591048634674422
+1,"Black or African American Alone",1,"Hispanic or Latino",2019,"2019",3769.0000000000005,"San Antonio, TX","16000US4865000","san-antonio-tx",10690,0.006909032153821296
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2019,"2019",1358,"San Antonio, TX","16000US4865000","san-antonio-tx",3627,0.0023441589917595736
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2019,"2019",3928,"San Antonio, TX","16000US4865000","san-antonio-tx",11069,0.007153982872838908
+3,"Asian Alone",0,"Not Hispanic or Latino",2019,"2019",4284,"San Antonio, TX","16000US4865000","san-antonio-tx",43347,0.028015511391177896
+3,"Asian Alone",1,"Hispanic or Latino",2019,"2019",722,"San Antonio, TX","16000US4865000","san-antonio-tx",1619,0.0010463725965422523
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2019,"2019",449.00000000000006,"San Antonio, TX","16000US4865000","san-antonio-tx",792,0.0005118759088705768
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2019,"2019",114.00000000000001,"San Antonio, TX","16000US4865000","san-antonio-tx",69,0.00004459524963645177
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2019,"2019",2384,"San Antonio, TX","16000US4865000","san-antonio-tx",3072,0.0019854580707707225
+5,"Some Other Race Alone",1,"Hispanic or Latino",2019,"2019",11350,"San Antonio, TX","16000US4865000","san-antonio-tx",101961,0.06589820649539506
+6,"Two or More Races",0,"Not Hispanic or Latino",2019,"2019",4238.602717877673,"San Antonio, TX","16000US4865000","san-antonio-tx",26419,0.01707481014703506
+6,"Two or More Races",1,"Hispanic or Latino",2019,"2019",5489.102294546896,"San Antonio, TX","16000US4865000","san-antonio-tx",30800,0.019906285344966877
+0,"White Alone",0,"Not Hispanic or Latino",2018,"2018",7679,"San Antonio, TX","16000US4865000","san-antonio-tx",379916,0.24795263318653032
+0,"White Alone",1,"Hispanic or Latino",2018,"2018",12676,"San Antonio, TX","16000US4865000","san-antonio-tx",871538,0.5688103212871326
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2018,"2018",6126,"San Antonio, TX","16000US4865000","san-antonio-tx",94671,0.06178714172712392
+1,"Black or African American Alone",1,"Hispanic or Latino",2018,"2018",1987.9999999999998,"San Antonio, TX","16000US4865000","san-antonio-tx",6880,0.004490240253959635
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2018,"2018",997,"San Antonio, TX","16000US4865000","san-antonio-tx",2486,0.0016224908824627401
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2018,"2018",3770,"San Antonio, TX","16000US4865000","san-antonio-tx",9336,0.006093151600431272
+3,"Asian Alone",0,"Not Hispanic or Latino",2018,"2018",3420.0000000000005,"San Antonio, TX","16000US4865000","san-antonio-tx",49781,0.03248962937243671
+3,"Asian Alone",1,"Hispanic or Latino",2018,"2018",1032,"San Antonio, TX","16000US4865000","san-antonio-tx",1521,0.000992682474748925
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2018,"2018",608,"San Antonio, TX","16000US4865000","san-antonio-tx",546,0.0003563475550380757
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2018,"2018",258,"San Antonio, TX","16000US4865000","san-antonio-tx",176,0.00011486661114780461
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2018,"2018",504.00000000000006,"San Antonio, TX","16000US4865000","san-antonio-tx",1033,0.0006741886892936487
+5,"Some Other Race Alone",1,"Hispanic or Latino",2018,"2018",8442,"San Antonio, TX","16000US4865000","san-antonio-tx",68816,0.0449128449587916
+6,"Two or More Races",0,"Not Hispanic or Latino",2018,"2018",3403.8219694925297,"San Antonio, TX","16000US4865000","san-antonio-tx",23034,0.015033167733968929
+6,"Two or More Races",1,"Hispanic or Latino",2018,"2018",4306.97306701586,"San Antonio, TX","16000US4865000","san-antonio-tx",22478,0.014670293666933818
+0,"White Alone",0,"Not Hispanic or Latino",2017,"2017",8272,"San Antonio, TX","16000US4865000","san-antonio-tx",375463,0.24833637914350892
+0,"White Alone",1,"Hispanic or Latino",2017,"2017",12539,"San Antonio, TX","16000US4865000","san-antonio-tx",831288,0.5498252875661497
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2017,"2017",5229,"San Antonio, TX","16000US4865000","san-antonio-tx",97925,0.06476893842436701
+1,"Black or African American Alone",1,"Hispanic or Latino",2017,"2017",3027,"San Antonio, TX","16000US4865000","san-antonio-tx",7677,0.005077673120080322
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2017,"2017",765,"San Antonio, TX","16000US4865000","san-antonio-tx",2184,0.0014445275621017876
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2017,"2017",1296,"San Antonio, TX","16000US4865000","san-antonio-tx",4189,0.0027706620685184927
+3,"Asian Alone",0,"Not Hispanic or Latino",2017,"2017",3970,"San Antonio, TX","16000US4865000","san-antonio-tx",38119,0.025212429551171263
+3,"Asian Alone",1,"Hispanic or Latino",2017,"2017",822,"San Antonio, TX","16000US4865000","san-antonio-tx",1801,0.001191206107758846
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2017,"2017",523,"San Antonio, TX","16000US4865000","san-antonio-tx",1197,0.0007917122215365566
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2017,"2017",398,"San Antonio, TX","16000US4865000","san-antonio-tx",422,0.0002791165893804736
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2017,"2017",1708,"San Antonio, TX","16000US4865000","san-antonio-tx",3379,0.002234916956200522
+5,"Some Other Race Alone",1,"Hispanic or Latino",2017,"2017",9621,"San Antonio, TX","16000US4865000","san-antonio-tx",101989,0.06745692377802162
+6,"Two or More Races",0,"Not Hispanic or Latino",2017,"2017",4269.213159353841,"San Antonio, TX","16000US4865000","san-antonio-tx",24581,0.016258210624553134
+6,"Two or More Races",1,"Hispanic or Latino",2017,"2017",4456.587147134004,"San Antonio, TX","16000US4865000","san-antonio-tx",21699,0.014352016286651415
+0,"White Alone",0,"Not Hispanic or Latino",2016,"2016",7311.000000000001,"San Antonio, TX","16000US4865000","san-antonio-tx",371519,0.24892495380215934
+0,"White Alone",1,"Hispanic or Latino",2016,"2016",14174.999999999998,"San Antonio, TX","16000US4865000","san-antonio-tx",813357,0.5449650048844418
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2016,"2016",5389,"San Antonio, TX","16000US4865000","san-antonio-tx",102488,0.06866895277300947
+1,"Black or African American Alone",1,"Hispanic or Latino",2016,"2016",3285,"San Antonio, TX","16000US4865000","san-antonio-tx",8397,0.0056261532709679235
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2016,"2016",732,"San Antonio, TX","16000US4865000","san-antonio-tx",1697,0.0011370229964073558
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2016,"2016",4646,"San Antonio, TX","16000US4865000","san-antonio-tx",9705,0.006502538703673181
+3,"Asian Alone",0,"Not Hispanic or Latino",2016,"2016",3273,"San Antonio, TX","16000US4865000","san-antonio-tx",40410,0.027075485730595903
+3,"Asian Alone",1,"Hispanic or Latino",2016,"2016",825,"San Antonio, TX","16000US4865000","san-antonio-tx",1453,0.0009735382520800754
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2016,"2016",321,"San Antonio, TX","16000US4865000","san-antonio-tx",273,0.00018291530820224402
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2016,"2016",376,"San Antonio, TX","16000US4865000","san-antonio-tx",454,0.0003041888275597758
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2016,"2016",770,"San Antonio, TX","16000US4865000","san-antonio-tx",1675,0.001122282568640142
+5,"Some Other Race Alone",1,"Hispanic or Latino",2016,"2016",10551,"San Antonio, TX","16000US4865000","san-antonio-tx",105107,0.07042373369675188
+6,"Two or More Races",0,"Not Hispanic or Latino",2016,"2016",2446.6002942859304,"San Antonio, TX","16000US4865000","san-antonio-tx",18933,0.012685478132575407
+6,"Two or More Races",1,"Hispanic or Latino",2016,"2016",3086.8213424168234,"San Antonio, TX","16000US4865000","san-antonio-tx",17026,0.011407751052935556
+0,"White Alone",0,"Not Hispanic or Latino",2015,"2015",8059.000000000001,"San Antonio, TX","16000US4865000","san-antonio-tx",364707,0.2481297080466777
+0,"White Alone",1,"Hispanic or Latino",2015,"2015",14300,"San Antonio, TX","16000US4865000","san-antonio-tx",839257,0.570991492859009
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2015,"2015",5464,"San Antonio, TX","16000US4865000","san-antonio-tx",98876,0.06727063920578247
+1,"Black or African American Alone",1,"Hispanic or Latino",2015,"2015",2581,"San Antonio, TX","16000US4865000","san-antonio-tx",7507,0.005107414221022381
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2015,"2015",796,"San Antonio, TX","16000US4865000","san-antonio-tx",1986,0.001351182182356527
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2015,"2015",4691,"San Antonio, TX","16000US4865000","san-antonio-tx",10247,0.0069715829922494124
+3,"Asian Alone",0,"Not Hispanic or Latino",2015,"2015",3149,"San Antonio, TX","16000US4865000","san-antonio-tx",41988,0.0285666855351389
+3,"Asian Alone",1,"Hispanic or Latino",2015,"2015",585,"San Antonio, TX","16000US4865000","san-antonio-tx",1248,0.0008490812505442828
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2015,"2015",922.9999999999999,"San Antonio, TX","16000US4865000","san-antonio-tx",1408,0.0009579378211268832
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2015,"2015",340,"San Antonio, TX","16000US4865000","san-antonio-tx",346,0.0002354023338848733
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2015,"2015",1276,"San Antonio, TX","16000US4865000","san-antonio-tx",1957,0.0013314519289384307
+5,"Some Other Race Alone",1,"Hispanic or Latino",2015,"2015",6631,"San Antonio, TX","16000US4865000","san-antonio-tx",60696,0.04129474005050945
+6,"Two or More Races",0,"Not Hispanic or Latino",2015,"2015",3780.907959736656,"San Antonio, TX","16000US4865000","san-antonio-tx",21295,0.014488129190977967
+6,"Two or More Races",1,"Hispanic or Latino",2015,"2015",3509.9351845867463,"San Antonio, TX","16000US4865000","san-antonio-tx",18306,0.012454552381781765
+0,"White Alone",0,"Not Hispanic or Latino",2014,"2014",8253,"San Antonio, TX","16000US4865000","san-antonio-tx",364008,0.2533599030571655
+0,"White Alone",1,"Hispanic or Latino",2014,"2014",14392,"San Antonio, TX","16000US4865000","san-antonio-tx",783391,0.5452623783429373
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2014,"2014",5657,"San Antonio, TX","16000US4865000","san-antonio-tx",94964,0.06609764025494128
+1,"Black or African American Alone",1,"Hispanic or Latino",2014,"2014",1957,"San Antonio, TX","16000US4865000","san-antonio-tx",6310,0.004391939155982051
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2014,"2014",758,"San Antonio, TX","16000US4865000","san-antonio-tx",2323,0.0016168739555223936
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2014,"2014",2512,"San Antonio, TX","16000US4865000","san-antonio-tx",7113,0.004950849955071368
+3,"Asian Alone",0,"Not Hispanic or Latino",2014,"2014",2677,"San Antonio, TX","16000US4865000","san-antonio-tx",38314,0.026667631826037447
+3,"Asian Alone",1,"Hispanic or Latino",2014,"2014",538,"San Antonio, TX","16000US4865000","san-antonio-tx",711,0.0004948761869894197
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2014,"2014",250,"San Antonio, TX","16000US4865000","san-antonio-tx",217,0.0001510381611486696
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2014,"2014",396,"San Antonio, TX","16000US4865000","san-antonio-tx",366,0.00025474639161480675
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2014,"2014",936.0000000000001,"San Antonio, TX","16000US4865000","san-antonio-tx",1433,0.0009974086862951314
+5,"Some Other Race Alone",1,"Hispanic or Latino",2014,"2014",10520,"San Antonio, TX","16000US4865000","san-antonio-tx",97033,0.06753772299879657
+6,"Two or More Races",0,"Not Hispanic or Latino",2014,"2014",2818.023775627168,"San Antonio, TX","16000US4865000","san-antonio-tx",18924,0.013171641297591812
+6,"Two or More Races",1,"Hispanic or Latino",2014,"2014",4051.9285531706996,"San Antonio, TX","16000US4865000","san-antonio-tx",21616,0.015045349729906182
+0,"White Alone",0,"Not Hispanic or Latino",2013,"2013",7392,"San Antonio, TX","16000US4865000","san-antonio-tx",368191,0.2613136976579134
+0,"White Alone",1,"Hispanic or Latino",2013,"2013",12759,"San Antonio, TX","16000US4865000","san-antonio-tx",747185,0.5302945351312988
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2013,"2013",5171,"San Antonio, TX","16000US4865000","san-antonio-tx",95280,0.06762242725337118
+1,"Black or African American Alone",1,"Hispanic or Latino",2013,"2013",1914,"San Antonio, TX","16000US4865000","san-antonio-tx",5083,0.0036075230660042585
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2013,"2013",1373,"San Antonio, TX","16000US4865000","san-antonio-tx",1981,0.0014059616749467708
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2013,"2013",1718,"San Antonio, TX","16000US4865000","san-antonio-tx",5612,0.003982966643009227
+3,"Asian Alone",0,"Not Hispanic or Latino",2013,"2013",3317,"San Antonio, TX","16000US4865000","san-antonio-tx",37150,0.02636621717530163
+3,"Asian Alone",1,"Hispanic or Latino",2013,"2013",475,"San Antonio, TX","16000US4865000","san-antonio-tx",653,0.00046344925479063163
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2013,"2013",773,"San Antonio, TX","16000US4865000","san-antonio-tx",890,0.0006316536550745209
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2013,"2013",320,"San Antonio, TX","16000US4865000","san-antonio-tx",247,0.0001753016323633783
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2013,"2013",1162,"San Antonio, TX","16000US4865000","san-antonio-tx",2036,0.0014449964513839602
+5,"Some Other Race Alone",1,"Hispanic or Latino",2013,"2013",10480,"San Antonio, TX","16000US4865000","san-antonio-tx",109194,0.07749751596877218
+6,"Two or More Races",0,"Not Hispanic or Latino",2013,"2013",2867.166719951946,"San Antonio, TX","16000US4865000","san-antonio-tx",15430,0.010951029098651525
+6,"Two or More Races",1,"Hispanic or Latino",2013,"2013",4053.1629624282314,"San Antonio, TX","16000US4865000","san-antonio-tx",20068,0.014242725337118524
