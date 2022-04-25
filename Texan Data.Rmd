@@ -3,7 +3,7 @@ title: "Texan Data"
 author: "Andy Berrios"
 date: '2022-04-26'
 output:   
-  html_document:
+  slidy_presentation:
     highlight: pygments
     theme: readable
 editor_options: 
@@ -17,6 +17,7 @@ library(ggplot2)
 library(ggthemes)
 library(showtext)
 library(ggridges)
+library(treemap)
 ```
 
 
@@ -42,12 +43,16 @@ DTX_People <- read.csv("Dallas Diversity.csv")
 SATX_People <- read.csv("SanAnton Diversity.csv")
 ```
 
-Where is your future? Where will your next chapter begin?
 
-According to XXXXX, there are three major components to look out for when planning a move; Potential Job Perspectives, Cost of Living, and Demographics.
+# Where is your future? Where will your next opportunity begin?
+
+# Wether for future investments or a change in scenery let's take a closer look at Houston, Dallas, and San Antonio!
+
+According to Moving.com, there are three major components to look out for when planning a move or purchase: Potential Job Perspectives, Cost of Living, and Demographics.
 
 
-Firstly let us consider what you need to survive: Money!
+# First, let's consider what you need to survive in America: Money! 
+Each city will have different industries that thrive between it's borders. Lets compare the different size and growth of all industries as a whole within their respective city!
 
 ```{r, include=FALSE}
 # Display Industries
@@ -68,6 +73,7 @@ SA <- SATX_Work %>%
   mutate(City = "San Antonio")
 ```
 
+
 ```{r, echo=FALSE}
 ## Overall Industry comparison
 g <- rbind(H, D, SA)
@@ -76,9 +82,13 @@ ggplot(g) +
   geom_line(aes( x = Year, y = Industry_Population, color = City), size = 1.5) +  
   labs( title = "Industry Growth", subtitle = "Top 5 Industries in Houston, Dallas, and San Antonio", x = "Year", y = "Workforce Number", color = "City") +
   theme_fivethirtyeight() +
-  theme(axis.title = element_text()) +
+  theme(axis.title = element_text(),
+        legend.text = element_text(size = 10)) +
   scale_x_continuous(breaks = 2013:2019) 
+```
 
+We can tell here the difference of industry size within each city. However, looks can be deceiving, so lets take a closer look at the industries within each city!
+```{r, echo=FALSE}
 ## Individual Cities
 HTX_Work %>% 
   group_by(Year) %>% 
@@ -88,7 +98,8 @@ HTX_Work %>%
   geom_line( size= 1.5 , alpha = .8) +
   labs( title = "Industry Growth in Houston", subtitle = "Top 5 Largest Industries", x = "Year", y = "Workforce Number") +
   theme_fivethirtyeight() +
-  theme(axis.title = element_text()) +
+  theme(axis.title = element_text(),
+        legend.text = element_text(size = 10)) +
   scale_x_continuous(breaks = 2013:2019) +
   guides(color = guide_legend(nrow = 4))
 
@@ -100,7 +111,8 @@ DTX_Work %>%
   geom_line( size= 1.5 , alpha = .8) +
   labs( title = "Industry Growth in Dallas", subtitle = "Top 5 Largest Industries", x = "Year", y = "Workforce Number") +
   theme_fivethirtyeight() +
-  theme(axis.title = element_text()) +
+  theme(axis.title = element_text(),
+        legend.text = element_text(size = 10)) +
   scale_x_continuous(breaks = 2013:2019) +
   guides(color = guide_legend(nrow = 4))
 
@@ -113,7 +125,8 @@ SATX_Work %>%
   geom_line( size= 1.5 , alpha = .8) +
   labs( title = "Industry Growth in San Antonio", subtitle = "Top 5 Largest Industries", x = "Year", y = "Workforce Number") +
   theme_fivethirtyeight() +
-  theme(axis.title = element_text()) +
+  theme(axis.title = element_text(),
+        legend.text = element_text(size = 10)) +
   scale_x_continuous(breaks = 2013:2019) +
   guides(color = guide_legend(nrow = 4))
 ```
@@ -129,13 +142,16 @@ rbind(HTX_Income, DTX_Income, SATX_Income) %>%
   geom_line( size = 1.5, alpha = .65) + 
   labs( title = "Median Household Income", subtitle = "Within Houston, Dallas and San Antonio", x = "Year", y = "Median Income") + 
   theme_fivethirtyeight() +
-  theme(axis.title = element_text()) +
+  theme(axis.title = element_text(),
+        legend.text = element_text(size = 10)) +
   scale_x_continuous(breaks = 2013:2019)
   
 ```
 
-Moving on to the 'Cost of Living'.
-Lets dive deeper into the cost of a housing in the area as well as what an individual can expect when it comes to commute time.
+# Moving on to the 'Cost of Living'.
+Lets dive deeper into the housing market in each city as well as what an individual can expect when it comes to commute time.
+
+# Housing sales grouped by thier price of sale
 
 ```{r, echo=FALSE}
 Housing <- rbind(HTX_House, DTX_House,SATX_House)
@@ -145,15 +161,24 @@ Texas_Housing <- Housing %>% filter(Year == "2019") %>%
 
 
   ggplot(data = Texas_Housing,aes( x = reorder(Value.Bucket, -ID.Value.Bucket), y = Property.Value.by.Bucket, fill = Geography)) +
-  geom_bar( stat = "identity" ,position = "dodge") + coord_flip() + labs( title = "Housing Market in Major Texan Cities", subtitle = "2019", x = "Value of Homes", y = "Number of Homes Sold") + theme(axis.title = element_text())
+  geom_bar( stat = "identity" ,position = "dodge") + coord_flip() + labs( title = "Housing Market in Major Texan Cities", subtitle = "2019", x = "Value of Homes", y = "Number of Homes Sold") +  theme(axis.title = element_text(),
+        legend.text = element_text(size = 10))
 ```
 
-So what can we see?
-In Houston most homes sold are between $200,000 to $400,000
-In Dallas most homes sold are between $300,000 to $750,000
-In San Antonio most homes sold are between $200,000 to $250,000
+## So what can we see?
+Let's zoom into our best sellers
+```{r, echo=FALSE}
+ggplot(data = Texas_Housing %>% filter(ID.Value.Bucket == "15"|ID.Value.Bucket == "16"|ID.Value.Bucket == "17"|ID.Value.Bucket == "18"|ID.Value.Bucket == "19"|ID.Value.Bucket == "20"|ID.Value.Bucket == "21"|ID.Value.Bucket == "22"),aes( x = reorder(Value.Bucket, -ID.Value.Bucket), y = Property.Value.by.Bucket, fill = Geography)) +
+  geom_bar( stat = "identity" ,position = "dodge") + coord_flip() + labs( title = "Housing Market in Major Texan Cities", subtitle = "2019", x = "Value of Homes", y = "Number of Homes Sold") +  theme(axis.title = element_text(),
+        legend.text = element_text(size = 10))
 
-Alot more options for 'affordable housing' in the San Antonio and Houston area! Directly correalting to the massive construction industry.
+```
+
+### In Houston most homes sold are sold at almost an even rate from $150,000 to $750,000
+### In Dallas most homes sold are between $300,000 to $750,000
+### In San Antonio most homes sold are between $200,000 to $250,000
+
+Lots more options for 'affordable housing' in the San Antonio and Houston area! Directly correlating to the massive construction industry.
 
 ```{r, echo=FALSE}
 ## Commute
@@ -163,10 +188,37 @@ Texas_Commmute <- Commute %>% filter(Place == "Houston, TX" | Place == "Dallas, 
   ggplot( Texas_Commmute , aes(x = `Average Commute Time`, y = Place)) + geom_density_ridges(aes(fill = Place), alpha = .7) + 
     labs( title = " Commute Time", subtitle = "Within Houston, Dallas and San Antonio", x = "Average Commute Time", y = "Location") + 
   theme_fivethirtyeight() +
-  theme(axis.title = element_text())
+  theme(axis.title = element_text(),
+        legend.text = element_text(size = 10))
+        
+```
+
+
+#Demographics! 
+Who will be your neighbor? What will the culture of the city feel like?\
+
+```{r}
+treemap(HTX_People %>% filter(Year == "2019") %>% group_by(ID.Race), 
+        index=c("Ethnicity","Race","share"), 
+        vSize = "share",  #This is your quantitative variable
+        type = "index", 
+        
+        title="Demographic of Houstonians", #Customize your title
+        fontsize.title = 20,
+        fontsize.labels = 14
+        )
+
+
 
 
 ```
+
+
+
+
+
+
+
 
 
 # References
