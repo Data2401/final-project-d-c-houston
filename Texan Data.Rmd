@@ -104,7 +104,7 @@ HTX_Work %>%
   guides(color = guide_legend(nrow = 4))
 ```
 
-blah blah blah
+Although numbers are high in each workforce, the stability is hard to predict in each industry. In the last year of data collection the Houston workforce saw a downsize of almost 1 %! With Construction coming in first, Health Care Second, and Retail Trade third.
 
 # Dallas
 ```{r, echo=FALSE}
@@ -122,7 +122,7 @@ DTX_Work %>%
   guides(color = guide_legend(nrow = 4))
 ```
 
-blah blah blah
+With just under half of Houston's workforce, Dallas' industries grew at a rate of around .5 %! Again Construction leads, followed by Health Care, and Retail Trade that are on track to both be passes by Professional, Scientific & Technical Services.
 
 # San Antonio
 ```{r, echo=FALSE}
@@ -141,7 +141,7 @@ SATX_Work %>%
   guides(color = guide_legend(nrow = 4))
 ```
 
-blah blah blah
+San Antonio comes in with a strong and stable economy with industry growth coming in at 4.10 %!
 
 # Saleries
 Now, let's see how much you could potentially be making in each city!
@@ -159,11 +159,11 @@ rbind(HTX_Income, DTX_Income, SATX_Income) %>%
   scale_x_continuous(breaks = 2013:2019)
 ```
 
-blah blah blah
+Although all Incomes within their respective city are almost equivalent to each other, Dallas incomes are growing a faster rate than all. 
 
 
 # Moving on to the 'Cost of Living'.
-Lets dive deeper into the housing market in each city as well as what an individual can expect when it comes to commute time to work.
+Lets glimpse into the housing market in each city as well as what an individual can expect when it comes to commute time to work.
 
 # Housing Sales grouped by Purchace Price
 
@@ -240,12 +240,24 @@ ggplot(Texan_Folk %>% filter(Year == "2019") %>% group_by(Ethnicity), aes(area =
 
 ```
 
-San Antonio with a strong Hispanic presence. Over half of their population coming from Hispanic descent! Houston also matches diversity levels with San Antonio. Houston however, has the largest share of ethnicity inside its city limits. Lastly, Dallas will be the city with the least Hispanic presence. 
+San Antonio with a strong Hispanic presence. Over half of their population coming from Hispanic descent! Houston also matches diversity levels with San Antonio. Houston however, has the largest share of ethnicity inside its city limits. Lastly, Dallas will be the city with the weakest Hispanic presence. 
 
 # Summary 
 
 
-
+| City | Disadvantages | Advantages |
+|:--|:--|:--|
+| *Houston*       | - Longest Commute          | - Largest Workforce        |
+|               | - Shrinking Workforce      | - Diverse Housing Costs    |
+|               | - Lowest median Income     | - Most Diverse             |
+|--------------------- |--------------------- |------------------------ |
+| *Dallas*        | - Least Diverse            | - Highest median Income    |
+|               | - Priciest Homes           |                            |
+|               | - Smallest Workforce       |                            |
+|----------------------- |----------------------- |----------------------- |
+| *San Antonio*   |                            | - Strongest Industry Growth|
+|               |                            | - Cheapest Homes           |
+|               |                            | - Shortest Commute         |
 
 
 
