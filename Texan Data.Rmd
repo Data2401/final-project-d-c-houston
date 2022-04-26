@@ -12,12 +12,11 @@ editor_options:
 
 ```{r, include=FALSE}
 library(tidyverse)
-library(gganimate)
 library(ggplot2)
 library(ggthemes)
 library(showtext)
 library(ggridges)
-library(treemap)
+library(treemapify)
 ```
 
 
@@ -48,7 +47,7 @@ SATX_People <- read.csv("SanAnton Diversity.csv")
 
 # Wether for future investments or a change in scenery let's take a closer look at Houston, Dallas, and San Antonio!
 
-According to Moving.com, there are three major components to look out for when planning a move or purchase: Potential Job Perspectives, Cost of Living, and Demographics.
+According to Moving.com, there are three major components to look out for when planning a move or purchase: **Potential Job Perspectives, Cost of Living, and Demographics**.
 
 
 # First, let's consider what you need to survive in America: Money! 
@@ -87,9 +86,10 @@ ggplot(g) +
   scale_x_continuous(breaks = 2013:2019) 
 ```
 
-We can tell here the difference of industry size within each city. However, looks can be deceiving, so lets take a closer look at the industries within each city!
+At first glance one would say Houston is the go to place for job potential. However, looks can be deceiving, so lets take a closer look at the industries within each city!
+
+# Houston
 ```{r, echo=FALSE}
-## Individual Cities
 HTX_Work %>% 
   group_by(Year) %>% 
   select(Industry, Workforce.by.Industry.and.Gender, Year, Geography) %>% 
@@ -102,7 +102,12 @@ HTX_Work %>%
         legend.text = element_text(size = 10)) +
   scale_x_continuous(breaks = 2013:2019) +
   guides(color = guide_legend(nrow = 4))
+```
 
+blah blah blah
+
+# Dallas
+```{r, echo=FALSE}
 DTX_Work %>% 
   group_by(Year) %>% 
   select(Industry, Workforce.by.Industry.and.Gender, Year, Geography) %>% 
@@ -115,7 +120,12 @@ DTX_Work %>%
         legend.text = element_text(size = 10)) +
   scale_x_continuous(breaks = 2013:2019) +
   guides(color = guide_legend(nrow = 4))
+```
 
+blah blah blah
+
+# San Antonio
+```{r, echo=FALSE}
 options(scipen = 999)
 SATX_Work %>% 
   group_by(Year) %>% 
@@ -131,8 +141,10 @@ SATX_Work %>%
   guides(color = guide_legend(nrow = 4))
 ```
 
+blah blah blah
 
-Now, let's see how much you could potentially be making!
+# Saleries
+Now, let's see how much you could potentially be making in each city!
 ```{r, echo=FALSE}
 ## Display Income
 options(scipen = 999)
@@ -145,13 +157,15 @@ rbind(HTX_Income, DTX_Income, SATX_Income) %>%
   theme(axis.title = element_text(),
         legend.text = element_text(size = 10)) +
   scale_x_continuous(breaks = 2013:2019)
-  
 ```
 
-# Moving on to the 'Cost of Living'.
-Lets dive deeper into the housing market in each city as well as what an individual can expect when it comes to commute time.
+blah blah blah
 
-# Housing sales grouped by thier price of sale
+
+# Moving on to the 'Cost of Living'.
+Lets dive deeper into the housing market in each city as well as what an individual can expect when it comes to commute time to work.
+
+# Housing Sales grouped by Purchace Price
 
 ```{r, echo=FALSE}
 Housing <- rbind(HTX_House, DTX_House,SATX_House)
@@ -165,13 +179,18 @@ Texas_Housing <- Housing %>% filter(Year == "2019") %>%
         legend.text = element_text(size = 10))
 ```
 
-## So what can we see?
-Let's zoom into our best sellers
+Quite apparent that homes are being sold at a higher rate within Houston. Let's take a deeper look as to what these houses are going for.
+
+
+# A closer look
+
 ```{r, echo=FALSE}
 ggplot(data = Texas_Housing %>% filter(ID.Value.Bucket == "15"|ID.Value.Bucket == "16"|ID.Value.Bucket == "17"|ID.Value.Bucket == "18"|ID.Value.Bucket == "19"|ID.Value.Bucket == "20"|ID.Value.Bucket == "21"|ID.Value.Bucket == "22"),aes( x = reorder(Value.Bucket, -ID.Value.Bucket), y = Property.Value.by.Bucket, fill = Geography)) +
-  geom_bar( stat = "identity" ,position = "dodge") + coord_flip() + labs( title = "Housing Market in Major Texan Cities", subtitle = "2019", x = "Value of Homes", y = "Number of Homes Sold") +  theme(axis.title = element_text(),
+  geom_bar( stat = "identity" ,position = "dodge")+ coord_flip()  + labs( title = "Housing Market in Major Texan Cities", subtitle = "2019", x = "Value of Homes", y = "Proportion of Homes Sold") +
+  scale_y_discrete(guide = guide_axis(check.overlap = TRUE)) +
+  facet_wrap(~Geography) +
+  theme(axis.title = element_text(),
         legend.text = element_text(size = 10))
-
 ```
 
 ### In Houston most homes sold are sold at almost an even rate from $150,000 to $750,000
@@ -180,6 +199,10 @@ ggplot(data = Texas_Housing %>% filter(ID.Value.Bucket == "15"|ID.Value.Bucket =
 
 Lots more options for 'affordable housing' in the San Antonio and Houston area! Directly correlating to the massive construction industry.
 
+# Commuting
+A commute can make a break the experience in a city. Constant traffic not only causes longer delays in driving, but also raises stress levels and environmental pollution.
+
+# Gas Attack
 ```{r, echo=FALSE}
 ## Commute
 Texas_Commmute <- Commute %>% filter(Place == "Houston, TX" | Place == "Dallas, TX" |Place == "San Antonio, TX") 
@@ -193,26 +216,35 @@ Texas_Commmute <- Commute %>% filter(Place == "Houston, TX" | Place == "Dallas, 
         
 ```
 
+Houston Traffic; Can't be beat!
 
-#Demographics! 
-Who will be your neighbor? What will the culture of the city feel like?\
+# Demographics! 
+Who will be your neighbor? What will the culture of the city feel like?
 
-```{r}
-treemap(HTX_People %>% filter(Year == "2019") %>% group_by(ID.Race), 
-        index=c("Ethnicity","Race","share"), 
-        vSize = "share",  #This is your quantitative variable
-        type = "index", 
-        
-        title="Demographic of Houstonians", #Customize your title
-        fontsize.title = 20,
-        fontsize.labels = 14
-        )
+# Lets check out the Diversity!
+```{r, echo=FALSE}
+Texan_Folk <- rbind(HTX_People, DTX_People, SATX_People) 
 
 
+Texan_Folk <- Texan_Folk %>% 
+  mutate(Race = case_when(ID.Race < 1 ~ "White", ID.Race < 2 ~ "Black", ID.Race < 3  ~ "Native American", ID.Race < 4 ~ "Asian", ID.Race < 5 ~ "Islander", ID.Race < 6 ~ "Other", ID.Race < 7 ~ "Mixed")) 
 
+Texan_Folk <- Texan_Folk %>% 
+  mutate(Ethnicity = case_when(ID.Ethnicity < 1 ~ "Non-Hispanic", ID.Ethnicity < 2 ~ "Hispanic")) 
+
+
+ggplot(Texan_Folk %>% filter(Year == "2019") %>% group_by(Ethnicity), aes(area = Population,  fill = Ethnicity, label = paste(round(share * 100) , Race, sep = "%\n"), subgroup = Ethnicity)) +
+  geom_treemap(layout = "squarified") + 
+  geom_treemap_subgroup_border() +
+  geom_treemap_text(colour = "white", place = "topleft", reflow = T, size = 11) +
+  facet_wrap(~Geography) + 
+  theme_fivethirtyeight()
 
 ```
 
+San Antonio with a strong Hispanic presence. Over half of their population coming from Hispanic descent! Houston also matches diversity levels with San Antonio. Houston however, has the largest share of ethnicity inside its city limits. Lastly, Dallas will be the city with the least Hispanic presence. 
+
+# Summary 
 
 
 
