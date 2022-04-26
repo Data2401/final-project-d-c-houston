@@ -225,13 +225,11 @@ Who will be your neighbor? What will the culture of the city feel like?
 ```{r, echo=FALSE}
 Texan_Folk <- rbind(HTX_People, DTX_People, SATX_People) 
 
-
 Texan_Folk <- Texan_Folk %>% 
   mutate(Race = case_when(ID.Race < 1 ~ "White", ID.Race < 2 ~ "Black", ID.Race < 3  ~ "Native American", ID.Race < 4 ~ "Asian", ID.Race < 5 ~ "Islander", ID.Race < 6 ~ "Other", ID.Race < 7 ~ "Mixed")) 
 
 Texan_Folk <- Texan_Folk %>% 
-  mutate(Ethnicity = case_when(ID.Ethnicity < 1 ~ "Non-Hispanic", ID.Ethnicity < 2 ~ "Hispanic")) 
-
+  mutate(Ethnicity = case_when(ID.Ethnicity < 1 ~ "Non-Hispanic", ID.Ethnicity < 2 ~ "Hispanic"))
 
 ggplot(Texan_Folk %>% filter(Year == "2019") %>% group_by(Ethnicity), aes(area = Population,  fill = Ethnicity, label = paste(round(share * 100) , Race, sep = "%\n"), subgroup = Ethnicity)) +
   geom_treemap(layout = "squarified") + 
