@@ -1,27 +1,21 @@
 ---
-title: "Texan Data"
+title: "Texan Data Report"
 author: "Andy Berrios"
-date: '2022-04-26'
-output:   
-  slidy_presentation:
-    highlight: pygments
-    theme: readable
-editor_options: 
-  chunk_output_type: console
+date: '2022-05-09'
+output: html_document
 ---
 
-```{r, include=FALSE}
-library(tidyverse) 
-library(ggplot2) 
-library(ggthemes)
-library(showtext)
-library(ggridges)
-library(treemapify)
+```{r, include=TRUE}
+library(tidyverse)       # used for data import/manipulation
+library(ggplot2)         # used for data visualization
+library(ggthemes)        # used to set aesthetic themes of data visualization
+library(ggridges)        # used for data visualization
+library(treemapify)      # used for data visualization
 ```
 
 
-```{r, include=FALSE}
-# Loading CSV Data Sets
+```{r, include=TRUE}
+# Loading CSV Data Sets 
 ## Jobs
 HTX_Work <- read.csv("Houston Industries.csv")
 DTX_Work <- read.csv("Dallas Industries.csv")
@@ -53,8 +47,9 @@ According to Moving.com, there are three major components to look out for when p
 # First, let's consider what you need to survive in America: Money! 
 Each city will have different industries that thrive between it's borders. Lets compare the different size and growth of all industries as a whole within their respective city!
 
-```{r, include=FALSE}
+```{r, include=TRUE}
 # Display Industries
+## Here we are condensing (by way of Top 5 per year + City ) all the "JOB" data sets and assigning them to the respective city acronym
 H <- HTX_Work %>% 
   group_by(Year) %>% 
   slice_max( order_by = Workforce.by.Industry.and.Gender, n = 5) %>% 
@@ -73,10 +68,10 @@ SA <- SATX_Work %>%
 ```
 
 
-```{r, echo=FALSE}
+```{r, echo=TRUE}
 ## Overall Industry comparison
-g <- rbind(H, D, SA)
-options(scipen = 999)
+g <- rbind(H, D, SA)        # we are binding all condensed "JOB" data sets together to compare
+options(scipen = 999)       # used repeatedly to ensure all numbers on both axis' are in a natural form 
 ggplot(g) + 
   geom_line(aes( x = Year, y = Industry_Population, color = City), size = 1.5) +  
   labs( title = "Industry Growth", subtitle = "Top 5 Industries in Houston, Dallas, and San Antonio", x = "Year", y = "Workforce Number", color = "City") +
@@ -89,7 +84,8 @@ ggplot(g) +
 At first glance one would say Houston is the go to place for job potential. However, looks can be deceiving, so lets take a closer look at the industries within each city!
 
 # Houston
-```{r, echo=FALSE}
+```{r, echo=TRUE}
+# Filtering and displaying each city separately with their top 5 industries growth trends
 HTX_Work %>% 
   group_by(Year) %>% 
   select(Industry, Workforce.by.Industry.and.Gender, Year, Geography) %>% 
@@ -145,9 +141,10 @@ San Antonio comes in with a strong and stable economy with industry growth comin
 
 # Saleries
 Now, let's see how much you could potentially be making in each city!
-```{r, echo=FALSE}
-## Display Income
+```{r, echo=TRUE}
 options(scipen = 999)
+# Here we rbinded without prior condensing and went straight to the filtering and visualization
+# After much experimentation this method is the most efficient method to combine and display data. Because it eliminates the creation of multiple new variables and data sets. 
 rbind(HTX_Income, DTX_Income, SATX_Income) %>% 
   filter(Geography == "Houston, TX" | Geography == "Dallas, TX" |Geography == "San Antonio, TX") %>% select(Year, Geography, Household.Income.by.Race) %>% 
   ggplot(aes( x = Year, y = Household.Income.by.Race, color = Geography)) +
@@ -167,13 +164,15 @@ Lets glimpse into the housing market in each city as well as what an individual 
 
 # Housing Sales grouped by Purchace Price
 
-```{r, echo=FALSE}
+```{r, echo=TRUE}
+# reverting back to condense, filter, and plot method 
+# Binding all housing data sets together into one table  
 Housing <- rbind(HTX_House, DTX_House,SATX_House)
-
+# Filtering the binded data set to the relevent information on each cities housing market
 Texas_Housing <- Housing %>% filter(Year == "2019") %>% 
   filter(Geography == "Houston, TX" | Geography == "Dallas, TX" |Geography == "San Antonio, TX")
 
-
+# Ploting each cities housing market
   ggplot(data = Texas_Housing,aes( x = reorder(Value.Bucket, -ID.Value.Bucket), y = Property.Value.by.Bucket, fill = Geography)) +
   geom_bar( stat = "identity" ,position = "dodge") + coord_flip() + labs( title = "Housing Market in Major Texan Cities", subtitle = "2019", x = "Value of Homes", y = "Number of Homes Sold") +  theme(axis.title = element_text(),
         legend.text = element_text(size = 10))
@@ -184,7 +183,9 @@ Quite apparent that homes are being sold at a higher rate within Houston. Let's 
 
 # A closer look
 
-```{r, echo=FALSE}
+```{r, echo=TRUE}
+# Because most homes are sold within a similar range we will crop to where the bulk of homes are sold at
+# Facet Wrapping by City
 ggplot(data = Texas_Housing %>% filter(ID.Value.Bucket == "15"|ID.Value.Bucket == "16"|ID.Value.Bucket == "17"|ID.Value.Bucket == "18"|ID.Value.Bucket == "19"|ID.Value.Bucket == "20"|ID.Value.Bucket == "21"|ID.Value.Bucket == "22"),aes( x = reorder(Value.Bucket, -ID.Value.Bucket), y = Property.Value.by.Bucket, fill = Geography)) +
   geom_bar( stat = "identity" ,position = "dodge")+ coord_flip()  + labs( title = "Housing Market in Major Texan Cities", subtitle = "2019", x = "Value of Homes", y = "Proportion of Homes Sold") +
   scale_y_discrete(guide = guide_axis(check.overlap = TRUE)) +
@@ -203,11 +204,12 @@ Lots more options for 'affordable housing' in the San Antonio and Houston area! 
 A commute can make a break the experience in a city. Constant traffic not only causes longer delays in driving, but also raises stress levels and environmental pollution.
 
 # Gas Attack
-```{r, echo=FALSE}
-## Commute
+```{r, echo=TRUE}
+# Commute
+# Once again filtering our set to include only our respective cities
 Texas_Commmute <- Commute %>% filter(Place == "Houston, TX" | Place == "Dallas, TX" |Place == "San Antonio, TX") 
   
-  
+# Plotting our filtered dataset  
   ggplot( Texas_Commmute , aes(x = `Average Commute Time`, y = Place)) + geom_density_ridges(aes(fill = Place), alpha = .7) + 
     labs( title = " Commute Time", subtitle = "Within Houston, Dallas and San Antonio", x = "Average Commute Time", y = "Location") + 
   theme_fivethirtyeight() +
@@ -222,12 +224,14 @@ Houston Traffic; Can't be beat!
 Who will be your neighbor? What will the culture of the city feel like?
 
 # Lets check out the Diversity!
-```{r, echo=FALSE}
+```{r, echo=TRUE}
+# Repeating the binding, filtering, and plotting process
 Texan_Folk <- rbind(HTX_People, DTX_People, SATX_People) 
-
+# Renaming some of our variables 
 Texan_Folk <- Texan_Folk %>% 
   mutate(Race = case_when(ID.Race < 1 ~ "White", ID.Race < 2 ~ "Black", ID.Race < 3  ~ "Native American", ID.Race < 4 ~ "Asian", ID.Race < 5 ~ "Islander", ID.Race < 6 ~ "Other", ID.Race < 7 ~ "Mixed")) 
 
+# Mutating our created data set to itself to display a tree map that includes labels that are easier to comprehend
 Texan_Folk <- Texan_Folk %>% 
   mutate(Ethnicity = case_when(ID.Ethnicity < 1 ~ "Non-Hispanic", ID.Ethnicity < 2 ~ "Hispanic"))
 
@@ -243,19 +247,20 @@ ggplot(Texan_Folk %>% filter(Year == "2019") %>% group_by(Ethnicity), aes(area =
 San Antonio with a strong Hispanic presence. Over half of their population coming from Hispanic descent! Houston also matches diversity levels with San Antonio. Houston however, has the largest share of ethnicity inside its city limits. Lastly, Dallas will be the city with the weakest Hispanic presence. 
 
 # Summary 
-
-
+```
+# Table to display findings and conclusions
+``` 
 | City | Disadvantages | Advantages |
 |:--|:--|:--|
-| *Houston*       | - Longest Commute          | - Largest Workforce        |
+| *Houston*     | - Longest Commute          | - Largest Workforce        |
 |               | - Shrinking Workforce      | - Diverse Housing Costs    |
 |               | - Lowest median Income     | - Most Diverse             |
-|--------------------- |--------------------- |------------------------ |
-| *Dallas*        | - Least Diverse            | - Highest median Income    |
+|-------------- |--------------------------- |--------------------------- |
+| *Dallas*      | - Least Diverse            | - Highest median Income    |
 |               | - Priciest Homes           |                            |
 |               | - Smallest Workforce       |                            |
-|----------------------- |----------------------- |----------------------- |
-| *San Antonio*   |                            | - Strongest Industry Growth|
+|-------------- |--------------------------- |--------------------------- |
+| *San Antonio* |                            | - Strongest Industry Growth|
 |               |                            | - Cheapest Homes           |
 |               |                            | - Shortest Commute         |
 
@@ -265,18 +270,8 @@ San Antonio with a strong Hispanic presence. Over half of their population comin
 
 # References
 ```
-https://www.moving.com/tips/how-to-choose-the-right-city-for-you/ 
+https://www.moving.com/tips/how-to-choose-the-right-city-for-you/   # Used to 
+https://datausa.io
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
