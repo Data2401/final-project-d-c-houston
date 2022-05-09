@@ -1,0 +1,99 @@
+ID Race,Race,ID Ethnicity,Ethnicity,ID Year,Year,Hispanic Population Moe,Geography,ID Geography,Slug Geography,Population,share
+0,"White Alone",0,"Not Hispanic or Latino",2019,"2019",11508,"Dallas, TX","16000US4819000","dallas-tx",390695,0.29078980175875374
+0,"White Alone",1,"Hispanic or Latino",2019,"2019",16021,"Dallas, TX","16000US4819000","dallas-tx",444521,0.3308518754209882
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2019,"2019",14742.999999999998,"Dallas, TX","16000US4819000","dallas-tx",326060,0.24268271352707163
+1,"Black or African American Alone",1,"Hispanic or Latino",2019,"2019",1850,"Dallas, TX","16000US4819000","dallas-tx",4459,0.0033187824928455267
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2019,"2019",865.0000000000001,"Dallas, TX","16000US4819000","dallas-tx",3697,0.002751634643653266
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2019,"2019",1713,"Dallas, TX","16000US4819000","dallas-tx",3049,0.002269335685285044
+3,"Asian Alone",0,"Not Hispanic or Latino",2019,"2019",7548.000000000001,"Dallas, TX","16000US4819000","dallas-tx",49751,0.03702909795953303
+3,"Asian Alone",1,"Hispanic or Latino",2019,"2019",335,"Dallas, TX","16000US4819000","dallas-tx",282,0.00020988936151209654
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2019,"2019",443,"Dallas, TX","16000US4819000","dallas-tx",312,0.00023221801699210682
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2019,"2019",118,"Dallas, TX","16000US4819000","dallas-tx",59,0.0000439130224440202
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2019,"2019",346,"Dallas, TX","16000US4819000","dallas-tx",545,0.0004056372412201866
+5,"Some Other Race Alone",1,"Hispanic or Latino",2019,"2019",11709,"Dallas, TX","16000US4819000","dallas-tx",89847,0.06687209029708276
+6,"Two or More Races",0,"Not Hispanic or Latino",2019,"2019",3218.8348823759197,"Dallas, TX","16000US4819000","dallas-tx",19085,0.014204746327866535
+6,"Two or More Races",1,"Hispanic or Latino",2019,"2019",2978.2922959306734,"Dallas, TX","16000US4819000","dallas-tx",11203,0.008338264244751835
+0,"White Alone",0,"Not Hispanic or Latino",2018,"2018",9632,"Dallas, TX","16000US4819000","dallas-tx",393612,0.2926317918095334
+0,"White Alone",1,"Hispanic or Latino",2018,"2018",14097,"Dallas, TX","16000US4819000","dallas-tx",442728,0.3291472006042781
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2018,"2018",12736,"Dallas, TX","16000US4819000","dallas-tx",333542,0.2479726052654274
+1,"Black or African American Alone",1,"Hispanic or Latino",2018,"2018",1577,"Dallas, TX","16000US4819000","dallas-tx",4494,0.003341075151143876
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2018,"2018",1164,"Dallas, TX","16000US4819000","dallas-tx",2878,0.0021396560491749165
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2018,"2018",620,"Dallas, TX","16000US4819000","dallas-tx",1285,0.0009553363527414064
+3,"Asian Alone",0,"Not Hispanic or Latino",2018,"2018",5830,"Dallas, TX","16000US4819000","dallas-tx",45368,0.03372894914488103
+3,"Asian Alone",1,"Hispanic or Latino",2018,"2018",413,"Dallas, TX","16000US4819000","dallas-tx",611,0.00045424942531128353
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2018,"2018",316,"Dallas, TX","16000US4819000","dallas-tx",412,0.00030630239480891787
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2018,"2018",228.00000000000003,"Dallas, TX","16000US4819000","dallas-tx",0,0
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2018,"2018",1158,"Dallas, TX","16000US4819000","dallas-tx",1903,0.0014147899449547833
+5,"Some Other Race Alone",1,"Hispanic or Latino",2018,"2018",10725,"Dallas, TX","16000US4819000","dallas-tx",92338,0.06864890905792684
+6,"Two or More Races",0,"Not Hispanic or Latino",2018,"2018",3388.8290012923344,"Dallas, TX","16000US4819000","dallas-tx",19620,0.014586536374152836
+6,"Two or More Races",1,"Hispanic or Latino",2018,"2018",1787.9737134533048,"Dallas, TX","16000US4819000","dallas-tx",6285,0.004672598425665167
+0,"White Alone",0,"Not Hispanic or Latino",2017,"2017",10124,"Dallas, TX","16000US4819000","dallas-tx",381559,0.2845113313444232
+0,"White Alone",1,"Hispanic or Latino",2017,"2017",16148.000000000002,"Dallas, TX","16000US4819000","dallas-tx",462051,0.3445305841534916
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2017,"2017",11157,"Dallas, TX","16000US4819000","dallas-tx",322074,0.24015605065382747
+1,"Black or African American Alone",1,"Hispanic or Latino",2017,"2017",2987,"Dallas, TX","16000US4819000","dallas-tx",6040,0.004503755490816142
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2017,"2017",728,"Dallas, TX","16000US4819000","dallas-tx",1773,0.0013220461068240098
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2017,"2017",1345,"Dallas, TX","16000US4819000","dallas-tx",2472,0.0018432588697512421
+3,"Asian Alone",0,"Not Hispanic or Latino",2017,"2017",4758,"Dallas, TX","16000US4819000","dallas-tx",49218,0.03669964201109087
+3,"Asian Alone",1,"Hispanic or Latino",2017,"2017",573,"Dallas, TX","16000US4819000","dallas-tx",502,0.00037431875105789784
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2017,"2017",334,"Dallas, TX","16000US4819000","dallas-tx",655,0.0004884039480934723
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2017,"2017",501.99999999999994,"Dallas, TX","16000US4819000","dallas-tx",304,0.000226679084305978
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2017,"2017",2028,"Dallas, TX","16000US4819000","dallas-tx",3840,0.002863314749128143
+5,"Some Other Race Alone",1,"Hispanic or Latino",2017,"2017",10070,"Dallas, TX","16000US4819000","dallas-tx",78753,0.05872255896825225
+6,"Two or More Races",0,"Not Hispanic or Latino",2017,"2017",2870.2369240186426,"Dallas, TX","16000US4819000","dallas-tx",20529,0.015307549084596783
+6,"Two or More Races",1,"Hispanic or Latino",2017,"2017",3621.9399498059047,"Dallas, TX","16000US4819000","dallas-tx",11333,0.00845050678434095
+0,"White Alone",0,"Not Hispanic or Latino",2016,"2016",10299,"Dallas, TX","16000US4819000","dallas-tx",378704,0.2873449666222034
+0,"White Alone",1,"Hispanic or Latino",2016,"2016",14193,"Dallas, TX","16000US4819000","dallas-tx",436270,0.3310236717549027
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2016,"2016",10628,"Dallas, TX","16000US4819000","dallas-tx",321091,0.24363059982912752
+1,"Black or African American Alone",1,"Hispanic or Latino",2016,"2016",2243,"Dallas, TX","16000US4819000","dallas-tx",3738,0.0028362401380333884
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2016,"2016",437.00000000000006,"Dallas, TX","16000US4819000","dallas-tx",899,0.0006821240995430755
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2016,"2016",704,"Dallas, TX","16000US4819000","dallas-tx",1191,0.0009036816491165773
+3,"Asian Alone",0,"Not Hispanic or Latino",2016,"2016",5191,"Dallas, TX","16000US4819000","dallas-tx",46401,0.03520716389643854
+3,"Asian Alone",1,"Hispanic or Latino",2016,"2016",477,"Dallas, TX","16000US4819000","dallas-tx",596,0.00045222020392399664
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2016,"2016",156,"Dallas, TX","16000US4819000","dallas-tx",130,0.00009863863508409322
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2016,"2016",82,"Dallas, TX","16000US4819000","dallas-tx",49,0.000037179177839388985
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2016,"2016",1329,"Dallas, TX","16000US4819000","dallas-tx",2736,0.0020759638891544546
+5,"Some Other Race Alone",1,"Hispanic or Latino",2016,"2016",9348,"Dallas, TX","16000US4819000","dallas-tx",86174,0.06538527492105116
+6,"Two or More Races",0,"Not Hispanic or Latino",2016,"2016",3800.981978384006,"Dallas, TX","16000US4819000","dallas-tx",22798,0.017298181558824288
+6,"Two or More Races",1,"Hispanic or Latino",2016,"2016",3449.5746114557373,"Dallas, TX","16000US4819000","dallas-tx",17165,0.013024093624757387
+0,"White Alone",0,"Not Hispanic or Latino",2015,"2015",9285,"Dallas, TX","16000US4819000","dallas-tx",379630,0.2920046581677156
+0,"White Alone",1,"Hispanic or Latino",2015,"2015",13899.999999999998,"Dallas, TX","16000US4819000","dallas-tx",434199,0.3339781644542421
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2015,"2015",10493,"Dallas, TX","16000US4819000","dallas-tx",304850,0.23448520939448433
+1,"Black or African American Alone",1,"Hispanic or Latino",2015,"2015",1498,"Dallas, TX","16000US4819000","dallas-tx",3937,0.00302827052447461
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2015,"2015",580,"Dallas, TX","16000US4819000","dallas-tx",1569,0.001206846952730674
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2015,"2015",1648,"Dallas, TX","16000US4819000","dallas-tx",2187,0.0016822015842077654
+3,"Asian Alone",0,"Not Hispanic or Latino",2015,"2015",4489,"Dallas, TX","16000US4819000","dallas-tx",40340,0.031028812028779724
+3,"Asian Alone",1,"Hispanic or Latino",2015,"2015",206,"Dallas, TX","16000US4819000","dallas-tx",286,0.00021998612395218148
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2015,"2015",152,"Dallas, TX","16000US4819000","dallas-tx",117,0.00008999432343498334
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2015,"2015",40,"Dallas, TX","16000US4819000","dallas-tx",24,0.0000184603740379453
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2015,"2015",516,"Dallas, TX","16000US4819000","dallas-tx",1097,0.0008437929299844164
+5,"Some Other Race Alone",1,"Hispanic or Latino",2015,"2015",9126,"Dallas, TX","16000US4819000","dallas-tx",99476,0.07651517365827694
+6,"Two or More Races",0,"Not Hispanic or Latino",2015,"2015",3864.103130093709,"Dallas, TX","16000US4819000","dallas-tx",22513,0.01731660002984427
+6,"Two or More Races",1,"Hispanic or Latino",2015,"2015",2908.952560630716,"Dallas, TX","16000US4819000","dallas-tx",9857,0.00758182945383445
+0,"White Alone",0,"Not Hispanic or Latino",2014,"2014",9115,"Dallas, TX","16000US4819000","dallas-tx",373759,0.2917642117950307
+0,"White Alone",1,"Hispanic or Latino",2014,"2014",15074,"Dallas, TX","16000US4819000","dallas-tx",418956,0.3270459497076964
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2014,"2014",9197,"Dallas, TX","16000US4819000","dallas-tx",307913,0.24036342602169658
+1,"Black or African American Alone",1,"Hispanic or Latino",2014,"2014",1027,"Dallas, TX","16000US4819000","dallas-tx",2925,0.00228331710942202
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2014,"2014",908.9999999999999,"Dallas, TX","16000US4819000","dallas-tx",2424,0.0018922258711928128
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2014,"2014",984.9999999999999,"Dallas, TX","16000US4819000","dallas-tx",2086,0.0016283758941040458
+3,"Asian Alone",0,"Not Hispanic or Latino",2014,"2014",5502,"Dallas, TX","16000US4819000","dallas-tx",41791,0.03262294198969424
+3,"Asian Alone",1,"Hispanic or Latino",2014,"2014",371,"Dallas, TX","16000US4819000","dallas-tx",418,0.0003262996758080015
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2014,"2014",453,"Dallas, TX","16000US4819000","dallas-tx",648,0.0005058425596258014
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2014,"2014",128,"Dallas, TX","16000US4819000","dallas-tx",105,0.0000819652295689956
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2014,"2014",1301,"Dallas, TX","16000US4819000","dallas-tx",1977,0.0015432881795990885
+5,"Some Other Race Alone",1,"Hispanic or Latino",2014,"2014",10147,"Dallas, TX","16000US4819000","dallas-tx",96735,0.07551339507006466
+6,"Two or More Races",0,"Not Hispanic or Latino",2014,"2014",3647.6963963575704,"Dallas, TX","16000US4819000","dallas-tx",21721,0.01695587382350622
+6,"Two or More Races",1,"Hispanic or Latino",2014,"2014",2241.0678258366033,"Dallas, TX","16000US4819000","dallas-tx",9573,0.007472887072990427
+0,"White Alone",0,"Not Hispanic or Latino",2013,"2013",9185,"Dallas, TX","16000US4819000","dallas-tx",370695,0.29474602361816554
+0,"White Alone",1,"Hispanic or Latino",2013,"2013",16217.999999999998,"Dallas, TX","16000US4819000","dallas-tx",376965,0.29973140936139353
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2013,"2013",11285,"Dallas, TX","16000US4819000","dallas-tx",300647,0.23904964394645362
+1,"Black or African American Alone",1,"Hispanic or Latino",2013,"2013",1883,"Dallas, TX","16000US4819000","dallas-tx",4998,0.003973996482400872
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2013,"2013",470.99999999999994,"Dallas, TX","16000US4819000","dallas-tx",1297,0.0010312671944125514
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2013,"2013",596,"Dallas, TX","16000US4819000","dallas-tx",975,0.000775239409832103
+3,"Asian Alone",0,"Not Hispanic or Latino",2013,"2013",5522,"Dallas, TX","16000US4819000","dallas-tx",43169,0.03432442059799185
+3,"Asian Alone",1,"Hispanic or Latino",2013,"2013",184,"Dallas, TX","16000US4819000","dallas-tx",158,0.00012562854025997158
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2013,"2013",272,"Dallas, TX","16000US4819000","dallas-tx",321,0.00025523266723703086
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2013,"2013",150,"Dallas, TX","16000US4819000","dallas-tx",146,0.00011608713213896107
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2013,"2013",1189,"Dallas, TX","16000US4819000","dallas-tx",2163,0.0017198388138121425
+5,"Some Other Race Alone",1,"Hispanic or Latino",2013,"2013",12511,"Dallas, TX","16000US4819000","dallas-tx",125602,0.09986832856793006
+6,"Two or More Races",0,"Not Hispanic or Latino",2013,"2013",4150.7553529448105,"Dallas, TX","16000US4819000","dallas-tx",19648,0.015622465563467856
+6,"Two or More Races",1,"Hispanic or Latino",2013,"2013",2707.494228987386,"Dallas, TX","16000US4819000","dallas-tx",10892,0.008660418104503863
